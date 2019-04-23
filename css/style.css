@@ -1,0 +1,183 @@
+.header {
+    height:620px;
+    /*background-image: url("../pictures/bathtub.jpg");*/
+    background-size:cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-color: dimgrey;
+    background: linear-gradient(to bottom, dimgrey, #161618 98%, #161618);
+}
+
+.iconBrand {
+    color:white;
+    text-align: left;
+    
+}
+
+.header-navbar-links{
+    color:white;
+    float:right;
+    margin-top:50px;
+   
+}
+
+.header-navbar-links li{
+    float:left;
+    list-style-type: none;
+    margin-left: 30px;
+    font-size: 15px;
+    text-shadow: 0px 0px 2px black;
+
+}
+
+.header-brand {
+    float:left;
+    color: white;
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 2px black;
+}   
+
+.header-brand-wrapper {
+    margin-top:36px;
+    float:left;
+}
+
+.header-brand-wrapper img {
+    float:left;
+}
+
+body{
+    background-color: #161618;
+    margin:0px;
+}
+
+.containerBody {
+    font-size: 20px;
+    background-color: #969696;
+    width: 600px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+    padding: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7e7c7c
+}
+
+.menu{
+    background-color: rgb(0, 0, 0);
+    margin-top: 350px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left:auto;
+    width: 410px;
+    border-style: solid;
+    border-color: rgb(59, 64, 77);
+    border-width: 5px;
+    border-radius: 5px;
+
+}
+
+.sidebar{
+    border-style: solid;
+    border-color: rgb(59, 64, 77);
+    border-bottom-width: 5px;
+    min-width: 100%;
+    height: auto;
+    background-color: azure;
+    float: top;
+    top:0px;
+    position: fixed;
+}
+
+.slogan{
+    color:white;
+    text-align: center;
+    text-shadow: 0px 0px 2px black;
+    padding-top:150px;
+}
+
+.slogan-top{
+    font-size: 170%;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.slogan-top a{
+    color: white;
+    text-decoration: none;
+}
+
+.slogan-bottom {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.botton-slogan {
+    margin-top: 50px;
+    color:white;
+    text-shadow: 0px 0px 3px black;
+}
+
+.botton-slogan:hover {
+    color:blue;
+    text-shadow: 0px 0px 3px black;
+}
+
+.trennline {
+    width: 100%;
+    border-top: solid 1px white;
+    padding-bottom: 25px;
+}
+.calcutorTop {
+    padding-top:100px;
+    padding-bottom: 100px;
+    color:white;
+    background-color: #161618;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 120%;
+}
+
+.calcutorTop h2 {
+    line-height: 1;
+    text-align: center;
+}
+
+.textboxBadwannen {
+    color: black;
+}
+
+.calulatorButton {
+    color: white;
+    font-size: 20px;
+}
+
+.buttonToogle {
+    color: white;
+    font-size: 20px;
+}
+
+.contactContainer {
+    background-color: #161618;
+    height:20px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.showUnit {
+    color: white;
+    background-color:  #161618 !important;
+}
+
+.headerLinks {
+    text-decoration: none;
+    color: white;
+}
+
+.toggle {
+    display: none;
+}
