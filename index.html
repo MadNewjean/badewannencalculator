@@ -2,125 +2,132 @@
 <html>
 
 <head>
-    <script src="main.js" type="text/javascript"></script> 
+    <script src="main.js" type="text/javascript"></script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendor/skeleton.css">
     <link href="https://fonts.googleapis.com/css?family=Tajawal:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-brand-wrapper">
-                <div class="iconBrand">
+            <div class="header_all">
+                <div class="header-brand-wrapper">
+                    <div class="iconBrand">
                         <i class="fas fa-bath"></i>
                         <a class="header-brand" href="/">BadewannenCalculator.de</a>
+                    </div>
                 </div>
+                <nav class="header-navbar">
+                    <strong>
+                        <ul class="header-navbar-links">
+                        <li>
+                            <div class="headerLinks">
+                                <a href="https://pr0gramm.com/top/badewannen/1350989">Gemäß Pr0-Norm 1</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="headerLinks" href="contact.html">Kontakt</a>
+                        </li>
+                        </ul>
+                    </strong>
+                </nav>
             </div>
-            <nav class="header-navbar">
-                <strong>
-                    <ul class="header-navbar-links">
-                       <li><a class ="headerLinks" href="contact.html">Kontakt</a></li>
-                    </ul>
-                </strong>
-            </nav>
         </div>
-        <div class="container">
-            <div class="slogan">
-                <div class="slogan-top">
-                   <a href="https://pr0gramm.com/top/badewannen/1350989">Gemäß Pr0-Norm 1</a>
-                </div>
-                <div class="slogan-bottom">
-                    Die Übermenscheneinheit.
-                </div>
-            </div>
-
     </header>
     <div class="calcutorTop">
         <div class="container">
-                <div class="row">
-                        <div class="three columns">
-                            <button id="buttonToogle" type="button" name="button" class="buttonToogle">wechseln</button >
-                        </div>
-                        <div class="three columns">
-                            
-                        </div>
-                        <div class="three columns">
-                            </div>
-                    </div>
-
-            <div id="firstRow" class="">
-                <div class="row">
-                    <div class="three columns">
-                        <input id="input" type="text" name="input" class="textboxBadwannen" placeholder="Badewannen">
-                    </div>
-                    <div class="three columns">
-                        <h2>in</h2>
-                    </div>
-                    <div class="three columns">
-                        <select id="selectunit" class="textboxBadwannen">
-                            <option value="Millimeter">Millimeter</option>
-                            <option value="Zentimeter">Zentimeter</option>
-                            <option value="Meter">Meter</option>
-                            <option value="Kilometer">Kilometer</option>
-                            <option value="Quadratmeter">Quadratmeter</option>
-                            <option value="Kubikmeter">Kubikmeter</option>
-                            <option value="Liter">Liter</option>
-                            <option value="Euro">Euro</option>
-                            <option value="US-Dollar">US-Dollar</option>
-                            <option value="Kilogramm">Kilogramm</option>
-                            <option value="Kilojoule">Kilojoule</option>
-                            <option value="Kilowatt">Kilowatt</option>
-                        </select>
-                    </div>
-                    <div class="three columns">
-                        <button id="buttonCalc" type="button" name="button" class="calulatorButton">berechnen</button >
-                    </div>
-                </div>
-            </div>
-                <div id="secondRow" class="">
-                    <div class="three columns">
-                        <input id="input" type="text" name="input" class="textboxBadwannen" placeholder="Einheit">
-                    </div>
-                    <div class="three columns">
-                        <h2>in</h2>
-                    </div>
-                    <div class="three columns">
-                        <select id="selectunit" class="textboxBadwannen">
-                            <option value="Millimeter">Millimeter</option>
-                            <option value="Zentimeter">Zentimeter</option>
-                            <option value="Meter">Meter</option>
-                            <option value="Kilometer">Kilometer</option>
-                            <option value="Quadratmeter">Quadratmeter</option>
-                            <option value="Kubikmeter">Kubikmeter</option>
-                            <option value="Liter">Liter</option>
-                            <option value="Euro">Euro</option>
-                            <option value="US-Dollar">US-Dollar</option>
-                            <option value="Kilogramm">Kilogramm</option>
-                            <option value="Kilojoule">Kilojoule</option>
-                            <option value="Kilowatt">Kilowatt</option>
-                        </select>
-                    </div>
-                    <div class="three columns">
-                        <button id="buttonCalc" type="button" name="button" class="calulatorButton">berechnen</button >
-                    </div>
-                </div>
-            </div>
-            <div class="trennline">
-            </div>
             <div class="row">
                 <div class="three columns">
-                    <input id="showUnitPr0" type="text" name="showUnitPr0" class="showUnit" placeholder="Pr0-Einheit" disabled="disabled">
+                    <button id="buttonToogle" type="button" name="button" class="buttonToogle">wechseln</button>
                 </div>
                 <div class="three columns">
-                    <input id="output" type="text" name="output" class="showUnit" placeholder="Ergebnis" disabled="disabled">
-                </div> 
+
+                </div>
                 <div class="three columns">
-                    <input id="showUnit" type="text" name="showUnit" class="showUnit" placeholder="Einheit" disabled="disabled">
+                </div>
+            </div>
+
+            <div id="firstRow" class="firstRow">
+
+                <div class="three columns">
+                    <input id="input" type="text" name="input" class="textboxBadwannen" placeholder="Badewannen">
+                </div>
+                <div class="three columns">
+                    <h4>Badewannen in</h4>
+                </div>
+                <div class="three columns">
+                    <select id="selectunit" class="textboxBadwannen">
+                        <option value="Millimeter">Millimeter</option>
+                        <option value="Zentimeter">Zentimeter</option>
+                        <option value="Meter">Meter</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option value="Quadratmeter">Quadratmeter</option>
+                        <option value="Kubikmeter">Kubikmeter</option>
+                        <option value="Liter">Liter</option>
+                        <option value="Euro">Euro</option>
+                        <option value="US-Dollar">US-Dollar</option>
+                        <option value="Kilogramm">Kilogramm</option>
+                        <option value="Kilojoule">Kilojoule</option>
+                        <option value="Kilowatt">Kilowatt</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <button id="buttonCalc" type="button" name="button" class="calulatorButton">berechnen</button>
+                </div>
+
+            </div>
+            <div id="secondRow" class="">
+                <div class="three columns">
+                    <input id="input_metricToWanne" type="text" name="input" class="textboxBadwannen"
+                        placeholder="Metrische Einheit">
+                </div>
+
+                <div class="three columns">
+                    <select id="selectunit_metricToWanne" class="textboxBadwannen">
+                        <option value="Millimeter">Millimeter</option>
+                        <option value="Zentimeter">Zentimeter</option>
+                        <option value="Meter">Meter</option>
+                        <option value="Kilometer">Kilometer</option>
+                        <option value="Quadratmeter">Quadratmeter</option>
+                        <option value="Kubikmeter">Kubikmeter</option>
+                        <option value="Liter">Liter</option>
+                        <option value="Euro">Euro</option>
+                        <option value="US-Dollar">US-Dollar</option>
+                        <option value="Kilogramm">Kilogramm</option>
+                        <option value="Kilojoule">Kilojoule</option>
+                        <option value="Kilowatt">Kilowatt</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <h4>in Badewannen</h4>
+                </div>
+                <div class="three columns">
+                    <button id="buttonCalc_metricToWanne" type="button" name="button"
+                        class="calulatorButton">berechnen</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="trennline"></div>
+        <div class="container">
+            <div class="row">
+                <div class="three columns">
+                    <input id="showUnitPr0" type="text" name="showUnitPr0" class="showUnit" placeholder="Pr0-Einheit"
+                        disabled="disabled">
+                </div>
+                <div class="three columns">
+                    <input id="output" type="text" name="output" class="showUnit" placeholder="Ergebnis"
+                        disabled="disabled">
+                </div>
+                <div class="three columns">
+                    <input id="showUnit" type="text" name="showUnit" class="showUnit_toggle" placeholder="Einheit"
+                        disabled="disabled">
                 </div>
             </div>
         </div>
@@ -128,4 +135,5 @@
 
 
 </body>
+
 </html>

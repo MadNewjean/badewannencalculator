@@ -1,24 +1,86 @@
-.header {
-    height:620px;
-    /*background-image: url("../pictures/bathtub.jpg");*/
-    background-size:cover;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-color: dimgrey;
-    background: linear-gradient(to bottom, dimgrey, #161618 98%, #161618);
+/* Mobile View*/
+@media only screen and (max-width: 715px) {
+    .header {
+        height:0px;
+        /*background-image: url("../pictures/bathtub.jpg");*/
+        background-size:cover;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-color: #161618;
+    }
+
+    .slogan-bottom {
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .header-brand {
+        float:left;
+        color: white;
+        font-size: 100%;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 0px 0px 2px black;
+    }  
+
+    .header-navbar-links{
+        color:white;
+        float:right;
+        margin-top: 37px; 
+    }
+}
+
+/* Desktop/Tablet View*/
+@media only screen and (min-width: 716px) {
+    .header {
+        height:0px;
+        /*background-image: url("../pictures/bathtub.jpg");*/
+        background-size:cover;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-color: #161618;
+    }
+
+    .slogan-bottom {
+        font-size: 300%;
+        font-weight: bold;
+    }
+
+    .header-brand {
+        float:left;
+        color: white;
+        font-size: 150%;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 0px 0px 2px black;
+    }  
+
+    .header-navbar-links{
+        color:white;
+        float:right;
+        margin-top:50px; 
+    }
+
+}
+
+.header_all {
+    margin-top:-30px
+}
+.header-brand-wrapper {
+    margin-top:36px;
+    float:left;
+}
+
+.header-brand-wrapper img {
+    float:left;
 }
 
 .iconBrand {
     color:white;
     text-align: left;
     
-}
-
-.header-navbar-links{
-    color:white;
-    float:right;
-    margin-top:50px;
-   
 }
 
 .header-navbar-links li{
@@ -30,24 +92,6 @@
 
 }
 
-.header-brand {
-    float:left;
-    color: white;
-    font-size: 150%;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 0px 0px 2px black;
-}   
-
-.header-brand-wrapper {
-    margin-top:36px;
-    float:left;
-}
-
-.header-brand-wrapper img {
-    float:left;
-}
 
 body{
     background-color: #161618;
@@ -111,10 +155,7 @@ body{
     text-decoration: none;
 }
 
-.slogan-bottom {
-    font-size: 300%;
-    font-weight: bold;
-}
+
 
 .botton-slogan {
     margin-top: 50px;
@@ -133,7 +174,7 @@ body{
     padding-bottom: 25px;
 }
 .calcutorTop {
-    padding-top:100px;
+    margin-top:100px;
     padding-bottom: 100px;
     color:white;
     background-color: #161618;
@@ -143,7 +184,7 @@ body{
 
 .calcutorTop h2 {
     line-height: 1;
-    text-align: center;
+    text-align: left;
 }
 
 .textboxBadwannen {
@@ -173,11 +214,26 @@ body{
     background-color:  #161618 !important;
 }
 
+.showUnit_toggle {
+    color: white;
+    background-color:  #161618 !important;
+    display: none;
+}
+
 .headerLinks {
     text-decoration: none;
     color: white;
 }
 
+.headerLinks a{
+    text-decoration: none;
+    color: white;
+}
+
 .toggle {
+    display: none;
+}
+
+.firstRow {
     display: none;
 }
