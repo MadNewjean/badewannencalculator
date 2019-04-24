@@ -2,9 +2,11 @@
 <html>
 
 <head>
+    <title>BWC.de</title>
     <script src="main.js" type="text/javascript"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pictures/bathtub.jpg">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="vendor/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendor/skeleton.css">
@@ -15,31 +17,32 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header_all">
+        <div class="header_all">
+            <div class="container">
                 <div class="header-brand-wrapper">
                     <div class="iconBrand">
-                        <i class="fas fa-bath"></i>
+                        <i class="fas fa-bath iconBath"></i>
                         <a class="header-brand" href="/">BadewannenCalculator.de</a>
                     </div>
+                     
                 </div>
-                <nav class="header-navbar">
-                    <strong>
-                        <ul class="header-navbar-links">
-                        <li>
-                            <div class="headerLinks">
-                                <a href="https://pr0gramm.com/top/badewannen/1350989">Gemäß Pr0-Norm 1</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a class="headerLinks" href="contact.html">Kontakt</a>
-                        </li>
-                        </ul>
-                    </strong>
+                <button id="menuToggleButton" type="button" name="button" style="color:white; font-size: 150%;" class="header_button">=</button>
+                <nav id="navbar" class="header-navbar-links" style="display: none;">
+                    <ul class="">
+                    <li>
+                        <div class="header_navbar_withoutBlue">
+                            <a href="https://pr0gramm.com/top/badewannen/1350989">Gemäß Pr0-Norm 1</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="header_navbar_withoutBlue" href="contact.html">Kontakt</a>
+                    </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
+    
     <div class="calcutorTop">
         <div class="container">
             <div class="row">

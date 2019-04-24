@@ -1,4 +1,14 @@
 window.addEventListener("load", function(){
+
+    document.getElementById("menuToggleButton").addEventListener("click", function(){
+        let navbar = document.getElementById("navbar");
+        if(navbar.style.display == "none"){
+            navbar.style.display = "block";
+        } else {
+            navbar.style.display = "none";
+        }
+    });
+
     document.getElementById("buttonToogle").addEventListener("click", function(){
         let button = document.getElementById("input");
         let currentValue = document.getElementById("input").placeholder
@@ -24,14 +34,6 @@ window.addEventListener("load", function(){
         } else {
             showUnit.style.display = "block";
         }
-        /*if(currentValue != "Badewannen"){
-            button.placeholder = "Badewannen";
-        }else{
-            button.placeholder =  document.getElementById("selectunit").value;
-        }*/
-
-
-
     });
     document.getElementById("buttonCalc").addEventListener("click", function(){
         let input = document.getElementById("input");
@@ -135,40 +137,40 @@ window.addEventListener("load", function(){
         console.log(unit.value);
         switch(unit.value){
             case "Millimeter":
-                result = input.value * 1700;
+                result = input.value / 1700;
                 break;
             case "Zentimeter":
-                result = input.value * 170;
+                result = input.value / 170;
                 break;
             case "Meter":
-                result = input.value * 1.7;
+                result = input.value / 1.7;
                 break;
             case "Kilometer":
-                result = input.value * 0.17;
+                result = input.value / 0.17;
                 break;
             case "Quadratmeter":
-                result = input.value * 1.275;
+                result = input.value / 1.275;
                 break;
             case "Kubikmeter":
-                result = input.value * 0.75225;
+                result = input.value / 0.75225;
                 break;
             case "Liter":
-                result = input.value * 140;
+                result = input.value / 140;
                 break;
             case "Euro":
-                result = input.value * 2586.97;
+                result = input.value / 2586.97;
                 break;
             case "US-Dollar":
-                result = input.value * 2923.2761;
+                result = input.value / 2923.2761;
                 break;
             case "Kilogramm":
-                result = input.value * 266.59;
+                result = input.value / 266.59;
                 break;
             case "Kilojoule":
-                result = input.value * 266.59;
+                result = input.value / 266.59;
                 break;
             case "Kilowatt":
-                result = input.value * 266.59;
+                result = input.value / 266.59;
                 break;
             default:
         }

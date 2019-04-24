@@ -1,5 +1,5 @@
 /* Mobile View*/
-@media only screen and (max-width: 715px) {
+@media screen and (max-width: 715px) {
     .header {
         height:0px;
         /*background-image: url("../pictures/bathtub.jpg");*/
@@ -17,22 +17,38 @@
     .header-brand {
         float:left;
         color: white;
-        font-size: 100%;
+        font-size: 80%;
         text-decoration: none;
         font-weight: bold;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         text-shadow: 0px 0px 2px black;
+        padding-top:8px;
     }  
 
     .header-navbar-links{
         color:white;
         float:right;
         margin-top: 37px; 
+        display: none;
+        width: 100%;
+        margin-bottom: 37px;
+        border-bottom: solid 1px white;
+    }
+
+    .iconBath {
+        padding-left: 5px;
+    }
+
+    .header_button {
+        margin-top: 36px;
+        line-height: 38px;
+        float: right;
+        display: inline-block;
     }
 }
 
 /* Desktop/Tablet View*/
-@media only screen and (min-width: 716px) {
+@media screen and (min-width: 716px) {
     .header {
         height:0px;
         /*background-image: url("../pictures/bathtub.jpg");*/
@@ -60,14 +76,23 @@
     .header-navbar-links{
         color:white;
         float:right;
-        margin-top:50px; 
+        margin-top:44px;
+        display: inline-block !important;
+    }
+
+    .header_button {
+        display: none;
     }
 
 }
 
 .header_all {
-    margin-top:-30px
+    margin-top:-30px;
+    display: block;
+    height:80px;
+    background: orangered;
 }
+
 .header-brand-wrapper {
     margin-top:36px;
     float:left;
@@ -174,7 +199,7 @@ body{
     padding-bottom: 25px;
 }
 .calcutorTop {
-    margin-top:100px;
+    margin-top:155px;
     padding-bottom: 100px;
     color:white;
     background-color: #161618;
@@ -220,12 +245,12 @@ body{
     display: none;
 }
 
-.headerLinks {
+.header_navbar_withoutBlue {
     text-decoration: none;
     color: white;
 }
 
-.headerLinks a{
+.header_navbar_withoutBlue a{
     text-decoration: none;
     color: white;
 }
