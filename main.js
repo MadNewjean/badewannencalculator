@@ -32,7 +32,7 @@ window.addEventListener("load", function(){
         if(showUnit.style.display == "block"){
             showUnit.style.display = "none";
         } else {
-            showUnit.style.display = "block";
+            showUnit.style.display = "inline-block";
         }
     });
     document.getElementById("buttonCalc").addEventListener("click", function(){
