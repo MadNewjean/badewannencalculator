@@ -1,5 +1,5 @@
 /* Mobile View*/
-@media screen and (max-width: 715px) {
+@media screen and (max-width: 1200px) {
     .header {
         height:0px;
         /*background-image: url("../pictures/bathtub.jpg");*/
