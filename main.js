@@ -128,6 +128,54 @@ window.addEventListener("load", function(){
         document.getElementById("output").value = result;
     });
 
+    document.getElementById("selectunit_metricToWanne").addEventListener("click", function(){
+        let unit = document.getElementById("selectunit_metricToWanne");
+        let unitPr0 = "";
+
+        switch(unit.value){
+            case "Millimeter":
+                unitPr0 = "Badewannenlänge:";
+                break;
+            case "Zentimeter":
+                unitPr0 = "Badewannenlänge:";
+                break;
+            case "Meter":
+                unitPr0 = "Badewannenlänge:";
+                break;
+            case "Kilometer":
+                unitPr0 = "Badewannenlänge:";
+                break;
+            case "Quadratmeter":
+                unitPr0 = "Flächenwanne:";
+                break;
+            case "Kubikmeter":
+                unitPr0 = "Raumwanne:";
+                break;
+            case "Liter":
+                unitPr0 = "Festwanne:";
+                break;
+            case "Euro":
+                unitPr0 = "Geldwanne:";
+                break;
+            case "US-Dollar":
+                unitPr0 = "Geldwanne:";
+                break;
+            case "Kilogramm":
+                unitPr0 = "Wägewertwanne:";
+                break;
+            case "Kilojoule":
+                unitPr0 = "Energiewanne:";
+                break;
+            case "Kilowatt":
+                unitPr0 = "Leistungswanne:";
+                break;
+            default:
+        }
+
+        console.log(unitPr0);
+        document.getElementById("textForCalcualtor").value = unitPr0;
+    });
+
     document.getElementById("buttonCalc_metricToWanne").addEventListener("click", function(){
         let input = document.getElementById("input_metricToWanne");
         let unit = document.getElementById("selectunit_metricToWanne");
@@ -214,6 +262,8 @@ window.addEventListener("load", function(){
                 break;
             default:
         }
+
+        
 
         console.log(result);
         document.getElementById("showUnitPr0").value = unitPr0;

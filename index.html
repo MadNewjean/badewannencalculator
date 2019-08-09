@@ -16,6 +16,12 @@
 </head>
 
 <body>
+    <script>
+            function copyToClipboard() {
+                document.getElementById("output").select();
+                document.execCommand('copy');
+            }
+    </script>
     <header class="header">
         <div class="header_all">
             <div class="container">
@@ -108,7 +114,8 @@
                     </select>
                 </div>
                 <div class="three columns">
-                    <h4>in Badewannen</h4>
+                    <input id="textForCalcualtor" type="text" name="output" class="showUnit" placeholder="in Badewannen" 
+                    disabled="disabled">
                 </div>
                 <div class="three columns">
                     <button id="buttonCalc_metricToWanne" type="button" name="button"
@@ -125,17 +132,18 @@
                         disabled="disabled">
                 </div>
                 <div class="three columns">
-                    <input id="output" type="text" name="output" class="showUnit" placeholder="Ergebnis"
-                        disabled="disabled">
+                    <input id="output" type="text" name="output" class="showUnit" placeholder="Ergebnis">
                 </div>
                 <div class="three columns">
                     <input id="showUnit" type="text" name="showUnit" class="showUnit_toggle" placeholder="Einheit"
                         disabled="disabled">
                 </div>
+                <div class="three columns">
+                    <button class="showUnit" onclick="copyToClipboard()">Kopiere Wert</button>
+                </div>
             </div>
         </div>
     </div>
-
 
 </body>
 
