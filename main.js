@@ -29,7 +29,7 @@ window.addEventListener("load", function(){
             firstRow.style.display = "block";
         }
 
-        if(showUnit.style.display == "block"){
+        if(showUnit.style.display == "inline-block"){
             showUnit.style.display = "none";
         } else {
             showUnit.style.display = "inline-block";
@@ -41,6 +41,9 @@ window.addEventListener("load", function(){
         let result = 0;
         let unitPr0 = "";
         switch(unit.value){
+            case "Fussballfeld":
+                result = input.value / 52.941;
+                break;
             case "Millimeter":
                 result = input.value * 1700;
                 break;
@@ -51,7 +54,7 @@ window.addEventListener("load", function(){
                 result = input.value * 1.7;
                 break;
             case "Kilometer":
-                result = input.value * 0.17;
+                result = input.value * 0.0017;
                 break;
             case "Quadratmeter":
                 result = input.value * 1.275;
@@ -69,7 +72,7 @@ window.addEventListener("load", function(){
                 result = input.value * 2923.2761;
                 break;
             case "Kilogramm":
-                result = input.value * 266.59;
+                result = input.value * 595.0031;
                 break;
             case "Kilojoule":
                 result = input.value * 266.59;
@@ -81,6 +84,9 @@ window.addEventListener("load", function(){
         }
 
         switch(unit.value){
+            case "Fussballfeld":
+                unitPr0 = "Badewannenlänge:";
+                break;
             case "Millimeter":
                 unitPr0 = "Badewannenlänge:";
                 break;
@@ -129,6 +135,9 @@ window.addEventListener("load", function(){
         let unitPr0 = "";
 
         switch(unit.value){
+            case "Fussballfeld":
+                unitPr0 = "Badewannenlänge:";
+                break;
             case "Millimeter":
                 unitPr0 = "Badewannenlänge:";
                 break;
@@ -185,6 +194,9 @@ window.addEventListener("load", function(){
         let unitPr0 = "";
 
         switch(unit.value){
+            case "Fussballfeld":
+                result = input.value * 52.941;
+                break;
             case "Millimeter":
                 result = input.value / 1700;
                 break;
@@ -195,7 +207,7 @@ window.addEventListener("load", function(){
                 result = input.value / 1.7;
                 break;
             case "Kilometer":
-                result = input.value / 0.17;
+                result = input.value / 0.0017;
                 break;
             case "Quadratmeter":
                 result = input.value / 1.275;
@@ -213,7 +225,7 @@ window.addEventListener("load", function(){
                 result = input.value / 2923.2761;
                 break;
             case "Kilogramm":
-                result = input.value / 266.59;
+                result = input.value / 595.0031;
                 break;
             case "Kilojoule":
                 result = input.value / 266.59;
@@ -225,6 +237,9 @@ window.addEventListener("load", function(){
         }
 
         switch(unit.value){
+            case "Fussballfeld":
+                unitPr0 = "Badewannenlänge:";
+                break;
             case "Millimeter":
                 unitPr0 = "Badewannenlänge:";
                 break;
