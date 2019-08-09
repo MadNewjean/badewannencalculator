@@ -40,8 +40,6 @@ window.addEventListener("load", function(){
         let unit = document.getElementById("selectunit");
         let result = 0;
         let unitPr0 = "";
-        console.log("tzjkdrt");
-        console.log(unit.value);
         switch(unit.value){
             case "Millimeter":
                 result = input.value * 1700;
@@ -121,14 +119,12 @@ window.addEventListener("load", function(){
                 break;
             default:
         }
-
-        console.log(result);
         document.getElementById("showUnitPr0").value = unitPr0;
         document.getElementById("showUnit").value = unit.value;
         document.getElementById("output").value = result;
     });
 
-    document.getElementById("selectunit_metricToWanne").addEventListener("click", function(){
+    function printUnit(){
         let unit = document.getElementById("selectunit_metricToWanne");
         let unitPr0 = "";
 
@@ -171,9 +167,15 @@ window.addEventListener("load", function(){
                 break;
             default:
         }
-
-        console.log(unitPr0);
         document.getElementById("textForCalcualtor").value = unitPr0;
+    }
+
+    document.getElementById("input_metricToWanne").addEventListener("click", function(){
+        printUnit();
+    });
+
+    document.getElementById("selectunit_metricToWanne").addEventListener("click", function(){
+        printUnit();
     });
 
     document.getElementById("buttonCalc_metricToWanne").addEventListener("click", function(){
@@ -182,7 +184,6 @@ window.addEventListener("load", function(){
         let result = 0;
         let unitPr0 = "";
 
-        console.log(unit.value);
         switch(unit.value){
             case "Millimeter":
                 result = input.value / 1700;
@@ -263,9 +264,6 @@ window.addEventListener("load", function(){
             default:
         }
 
-        
-
-        console.log(result);
         document.getElementById("showUnitPr0").value = unitPr0;
         document.getElementById("showUnit").value = unit.value;
         document.getElementById("output").value = result;
