@@ -16,7 +16,8 @@ window.addEventListener("load", function(){
         let firstRow = document.getElementById("firstRow");
         let secondRow = document.getElementById("secondRow");
         let showUnit = document.getElementById("showUnit");
-   
+        let showUnitPr0 = document.getElementById("showUnitPr0");
+
         if(secondRow.style.display == "none"){
             secondRow.style.display = "block";
         } else {
@@ -31,16 +32,34 @@ window.addEventListener("load", function(){
 
         if(showUnit.style.display == "inline-block"){
             showUnit.style.display = "none";
+            showUnitPr0.style.display = "inline-block";
         } else {
             showUnit.style.display = "inline-block";
+            showUnitPr0.style.display = "none";
         }
     });
+
     document.getElementById("buttonCalc").addEventListener("click", function(){
+        calcOptionTwoValues();
+    });
+
+    document.getElementById("input").addEventListener("keyup", function(){
+        calcOptionTwoValues();
+    });
+
+    document.getElementById("selectunit").addEventListener("change", function(){
+        calcOptionTwoValues();
+    });
+       
+    function calcOptionTwoValues(){
         let input = document.getElementById("input");
         let unit = document.getElementById("selectunit");
         let result = 0;
         let unitPr0 = "";
         switch(unit.value){
+            case "Saarland":
+                result = ((input.value * 2569000.69) / 0.784 );
+                break;
             case "Fussballfeld":
                 result = input.value / 52.941;
                 break;
@@ -84,6 +103,9 @@ window.addEventListener("load", function(){
         }
 
         switch(unit.value){
+            case "Saarland":
+                unitPr0 = "Flächenwanne:";
+                break;
             case "Fussballfeld":
                 unitPr0 = "Badewannenlänge:";
                 break;
@@ -128,7 +150,7 @@ window.addEventListener("load", function(){
         document.getElementById("showUnitPr0").value = unitPr0;
         document.getElementById("showUnit").value = unit.value;
         document.getElementById("output").value = result;
-    });
+    }
 
     function printUnit(){
         let unit = document.getElementById("selectunit_metricToWanne");
@@ -188,12 +210,27 @@ window.addEventListener("load", function(){
     });
 
     document.getElementById("buttonCalc_metricToWanne").addEventListener("click", function(){
+        calcOptionOneValues();
+    });
+
+    document.getElementById("input_metricToWanne").addEventListener("keyup", function(){
+        calcOptionOneValues();
+    });
+
+    document.getElementById("selectunit_metricToWanne").addEventListener("change", function(){
+        calcOptionOneValues();
+    });
+
+    function calcOptionOneValues(){
         let input = document.getElementById("input_metricToWanne");
         let unit = document.getElementById("selectunit_metricToWanne");
         let result = 0;
         let unitPr0 = "";
 
         switch(unit.value){
+            case "Saarland":
+                result = ((input.value * 2569000.69) / 0.784 );
+                break;
             case "Fussballfeld":
                 result = input.value * 52.941;
                 break;
@@ -237,6 +274,9 @@ window.addEventListener("load", function(){
         }
 
         switch(unit.value){
+            case "Saarland":
+                unitPr0 = "Flächenwanne:";
+                break;
             case "Fussballfeld":
                 unitPr0 = "Badewannenlänge:";
                 break;
@@ -281,6 +321,6 @@ window.addEventListener("load", function(){
 
         document.getElementById("showUnitPr0").value = unitPr0;
         document.getElementById("showUnit").value = unit.value;
-        document.getElementById("output").value = result;
-    });
+        document.getElementById("output").value = result.toFixed(3);
+    }
 });
