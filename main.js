@@ -57,11 +57,11 @@ window.addEventListener("load", function(){
         let result = 0;
         let unitPr0 = "";
         switch(unit.value){
-            case "Saarland":
-                result = ((input.value * 2569000.69) / 0.784 );
+            case "Saarland in m²":
+                result = input.value / 3276786.594;
                 break;
-            case "Fussballfeld":
-                result = input.value / 52.941;
+            case "Fussballfeld in m²":
+                result = input.value / 9107;
                 break;
             case "Millimeter":
                 result = input.value * 1700;
@@ -103,11 +103,11 @@ window.addEventListener("load", function(){
         }
 
         switch(unit.value){
-            case "Saarland":
+            case "Saarland in m²":
                 unitPr0 = "Flächenwanne:";
                 break;
-            case "Fussballfeld":
-                unitPr0 = "Badewannenlänge:";
+            case "Fussballfeld in m²":
+                unitPr0 = "Flächenwanne:";
                 break;
             case "Millimeter":
                 unitPr0 = "Badewannenlänge:";
@@ -155,10 +155,13 @@ window.addEventListener("load", function(){
     function printUnit(){
         let unit = document.getElementById("selectunit_metricToWanne");
         let unitPr0 = "";
-
+        
         switch(unit.value){
-            case "Fussballfeld":
-                unitPr0 = "Badewannenlänge:";
+            case "Saarland in m²":
+                unitPr0 = "Flächenwanne:";
+                break;
+            case "Fussballfeld in m²":
+                unitPr0 = "Flächenwanne:";
                 break;
             case "Millimeter":
                 unitPr0 = "Badewannenlänge:";
@@ -228,11 +231,11 @@ window.addEventListener("load", function(){
         let unitPr0 = "";
 
         switch(unit.value){
-            case "Saarland":
+            case "Saarland in m²":
                 result = ((input.value * 2569000.69) / 0.784 );
                 break;
-            case "Fussballfeld":
-                result = input.value * 52.941;
+            case "Fussballfeld in m²":
+                result = ((input.value * 7.140) / 0.784);
                 break;
             case "Millimeter":
                 result = input.value / 1700;
@@ -274,11 +277,11 @@ window.addEventListener("load", function(){
         }
 
         switch(unit.value){
-            case "Saarland":
+            case "Saarland in m²":
                 unitPr0 = "Flächenwanne:";
                 break;
-            case "Fussballfeld":
-                unitPr0 = "Badewannenlänge:";
+            case "Fussballfeld in m²":
+                unitPr0 = "Flächenwanne:";
                 break;
             case "Millimeter":
                 unitPr0 = "Badewannenlänge:";

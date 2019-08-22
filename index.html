@@ -68,12 +68,12 @@
                     <input id="input" type="number" step="0.01" name="input" class="textboxBadwannen" placeholder="Badewannen">
                 </div>
                 <div class="three columns">
-                    <h5>Badewannen in</h5>
+                    <p class="headline_badewannenIn">Badewanne(n) in</p>
                 </div>
                 <div class="three columns">
                     <select id="selectunit" class="textboxBadwannen">
-                        <option value="Saarland">Saarland</option>
-                        <option value="Fussballfeld">Fussballfeld</option>
+                        <option value="Saarland in m²">Saarland in m²</option>
+                        <option value="Fussballfeld in m²">Fussballfeld in m²</option>
                         <option value="Millimeter">Millimeter</option>
                         <option value="Zentimeter">Zentimeter</option>
                         <option value="Meter">Meter</option>
@@ -100,8 +100,8 @@
 
                 <div class="three columns">
                     <select id="selectunit_metricToWanne" class="textboxBadwannen">
-                        <option value="Saarland">Saarland</option>
-                        <option value="Fussballfeld">Fussballfeld</option>
+                        <option value="Saarland in m²">Saarland in m²</option>
+                        <option value="Fussballfeld in m²">Fussballfeld in m²</option>
                         <option value="Millimeter">Millimeter</option>
                         <option value="Zentimeter">Zentimeter</option>
                         <option value="Meter">Meter</option>
@@ -117,7 +117,7 @@
                     </select>
                 </div>
                 <div class="three columns">
-                    <input id="textForCalcualtor" type="text" name="output" class="showUnit" placeholder="in Badewannen" 
+                    <input id="textForCalcualtor" type="hidden" name="output" class="showUnit" placeholder="in Badewannen" 
                     disabled="disabled">
                 </div>
                 <div class="three columns">
@@ -130,11 +130,11 @@
         <div class="trennline"></div>
         <div class="container">
             <div class="row">
-                <div class="three columns">
+                <div class="three columns rightmargin">
                     <input id="showUnitPr0" type="text" name="showUnitPr0" class="showUnit" placeholder="Pr0-Einheit"
                         disabled="disabled">
                 </div>
-                <div class="three columns">
+                <div class="three columns leftmargin">
                     <input id="output" type="text" name="output" class="showUnit" placeholder="Ergebnis">
                 </div>
                 <div class="three columns">
